@@ -108,8 +108,7 @@ public class LoginController {
                 }
 
             } else {
-                System.out.println("Invalid credentials.");
-                // Optionally show error on UI
+                    loginText.setText("Invalid Credentials");
             }
 
         } catch (Exception e) {
