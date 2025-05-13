@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" styleClass="root-pane" stylesheets="@../PageStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.rpmsfinal.PatientControllers.VitalsController">
+
+    <VBox alignment="TOP_CENTER" spacing="0">
+
+        <!-- Top Bar -->
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+            <Button fx:id="backButton" onAction="#goBackHome" styleClass="back-button" text="&gt; Back" />
+            <Region HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <!-- Main Content Area -->
+        <StackPane prefHeight="498.0" prefWidth="800.0" styleClass="content-stack" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" spacing="30" styleClass="center-content">
+
+                <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                    <Label styleClass="page-title" text="Check Patient Vitals" />
+                </VBox>
+
+                <VBox alignment="CENTER" prefHeight="350.0" spacing="20" styleClass="info-card">
+                    <ScrollPane fx:id="scrollPane" fitToWidth="true">
+                        <content>
+                            <TableView fx:id="vitalsTable" prefHeight="400" prefWidth="780">
+                                <columns>
+                                    <TableColumn fx:id="tsCol" prefWidth="97" text="Timestamp" />
+                                    <TableColumn fx:id="tempCol" prefWidth="97" text="Temperature °C" />
+                                    <TableColumn fx:id="hrCol" prefWidth="97" text="Heart Rate" />
+                                    <TableColumn fx:id="bpCol" prefWidth="97" text="Blood Pressure" />
+                                    <TableColumn fx:id="respCol" prefWidth="97" text="Respiration" />
+                                    <TableColumn fx:id="oxCol" prefWidth="97" text="Oxygen Sat %" />
+                                    <TableColumn fx:id="statusCol" prefWidth="97" text="Status" />
+                                </columns>
+                            </TableView>
+
+                        </content>
+                    </ScrollPane>
+                    <Text fx:id="statusText" styleClass="page-text" textAlignment="CENTER" wrappingWidth="400.0" />
+               <Button fx:id="viewTrends" mnemonicParsing="false" onAction="#handleViewTrends" styleClass="card-button" text="View Trends" />
+               <Button fx:id="downloadPdfButton" mnemonicParsing="false" onAction="#handleDownloadPdf" styleClass="card-button" text="Download" />
+                </VBox>
+
+            </VBox>
+        </StackPane>
+
+    </VBox>
+</StackPane>

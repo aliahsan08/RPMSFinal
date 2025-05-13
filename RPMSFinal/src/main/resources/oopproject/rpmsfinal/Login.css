@@ -1,0 +1,63 @@
+.login-background {
+    -fx-background-color: #F4F6F8;
+}
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 40px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0.3, 0, 5);
+}
+
+.login-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+.login-field {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-padding: 0 10px;
+}
+
+.login-field:focused {
+    -fx-border-color: #C3B1E1;
+    -fx-border-width: 2px;
+}
+
+.login-button {
+    -fx-background-color: #000c66;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #2575fc;
+}
+.back-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: black;
+  -fx-font-family: "Roboto";
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+.back-button:hover {
+  -fx-background-color: rgba(255,255,255,0.2);
+  -fx-background-radius: 6px;
+}
+.top-bar {
+  -fx-background-color: #000c66;
+  -fx-padding: 0 30;
+  -fx-pref-height: 60px;
+}

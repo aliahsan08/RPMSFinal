@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" styleClass="root-pane" stylesheets="@../PageStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.rpmsfinal.AdminControllers.CreateDoctorController">
+
+    <VBox alignment="TOP_CENTER" spacing="0">
+
+        <!-- Top Bar -->
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+            <Button fx:id="backButton" onAction="#goBack" styleClass="back-button" text="&gt; Back" />
+            <Region HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <!-- Main Content Area -->
+        <StackPane prefHeight="498.0" prefWidth="800.0" styleClass="content-stack" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" spacing="30" styleClass="center-content">
+
+                <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                    <Label styleClass="page-title" text="Create Doctor User" />
+                </VBox>
+
+                <VBox alignment="CENTER" prefHeight="350.0" spacing="15" styleClass="info-card">
+               <HBox alignment="CENTER" layoutX="30.0" layoutY="200.0" prefHeight="46.0" prefWidth="700.0" styleClass="text-field-holder">
+                  <children>
+                     <TextField fx:id="specializationField" promptText="Specialization" />
+                     <HBox prefHeight="26.0" prefWidth="84.0" />
+                     <TextField fx:id="workingHoursField" promptText="Working Hours">
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin>
+                     </TextField>
+                  </children>
+               </HBox>
+                    <Button fx:id="createButton" mnemonicParsing="false" onAction="#handleCreateButton" styleClass="card-button" text="Create" />
+                    <Text fx:id="createText" styleClass="page-text" wrappingWidth="400.0" textAlignment="CENTER" />
+                </VBox>
+
+            </VBox>
+        </StackPane>
+
+    </VBox>
+</StackPane>

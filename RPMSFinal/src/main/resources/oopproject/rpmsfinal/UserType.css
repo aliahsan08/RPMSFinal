@@ -1,0 +1,28 @@
+.user-type-background {
+    -fx-background-color: #F4F6F8;
+}
+.user-type-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 40px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0.3, 0, 5);
+}
+
+.user-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+.user-button {
+    -fx-background-color: #000c66;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 80px;
+    -fx-pref-height: 80px;
+    -fx-background-radius: 100%;
+    -fx-cursor: hand;
+}
+.user-button:hover {
+    -fx-background-color: #2575fc;
+}

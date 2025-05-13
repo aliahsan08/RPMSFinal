@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" styleClass="root-pane" stylesheets="@../PageStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.rpmsfinal.AdminControllers.HomeController">
+
+    <VBox alignment="TOP_CENTER" spacing="0">
+
+        <!-- Top Bar -->
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+            <Button styleClass="nav-button" text="Home" />
+            <Button fx:id="profileButton" onAction="#handleProfileButton" styleClass="nav-button" text="Profile" />
+            <Button fx:id="reportsButton" onAction="#handleReportsButton" styleClass="nav-button" text="Reports" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="logoutButton" onAction="#handleLogoutButton" styleClass="logout-button" text="Logout" />
+        </HBox>
+
+        <!-- Main Content Area -->
+        <StackPane prefHeight="498.0" prefWidth="800.0" styleClass="content-stack" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" spacing="40" styleClass="center-content">
+                <VBox prefHeight="205.0" prefWidth="740.0" />
+
+                <HBox alignment="CENTER" spacing="30">
+                    <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                        <Label styleClass="card-title" text="Send Notifications" />
+                        <Button fx:id="notificationButton" onAction="#handleNotificationsButton" styleClass="card-button" text="View" />
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                        <Label styleClass="card-title" text="Manage Users" />
+                        <Button fx:id="usersButton" onAction="#handleUsersButton" styleClass="card-button" text="View" />
+                    </VBox>
+               <VBox alignment="CENTER" layoutX="396.0" layoutY="10.0" spacing="15" styleClass="info-card">
+                  <children>
+                     <Label styleClass="card-title" text="Assignments" />
+                     <Button fx:id="assignmentButton" onAction="#handleAssignmentButton" styleClass="card-button" text="Assign" />
+                  </children>
+               </VBox>
+                </HBox>
+            </VBox>
+        </StackPane>
+
+    </VBox>
+</StackPane>

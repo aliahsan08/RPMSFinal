@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" styleClass="root-pane" stylesheets="@../PageStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.rpmsfinal.AdminControllers.CreateUserController">
+
+    <VBox alignment="TOP_CENTER" spacing="0">
+
+        <!-- Top Bar -->
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+            <Button fx:id="backButton" onAction="#goBack" styleClass="back-button" text="&gt; Back" />
+            <Region HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <!-- Main Content Area -->
+        <StackPane prefHeight="498.0" prefWidth="800.0" styleClass="content-stack" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" spacing="30" styleClass="center-content">
+
+                <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                    <Label styleClass="page-title" text="Create User" />
+                </VBox>
+
+                <VBox alignment="CENTER" prefHeight="350.0" spacing="15" styleClass="info-card">
+                    <HBox alignment="CENTER" prefHeight="46.0" prefWidth="700.0" styleClass="text-field-holder">
+                        <children>
+                            <TextField fx:id="username" promptText="Username" />
+                            <HBox prefHeight="26.0" prefWidth="84.0" />
+                            <TextField fx:id="password" promptText="Password">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </TextField>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" layoutX="30.0" layoutY="108.0" prefHeight="46.0" prefWidth="700.0" styleClass="text-field-holder">
+                        <children>
+                            <TextField fx:id="userId" promptText="User ID" />
+                            <HBox prefHeight="26.0" prefWidth="84.0" />
+                            <TextField fx:id="name" promptText="Full Name">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </TextField>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" layoutX="30.0" layoutY="218.0" prefHeight="46.0" prefWidth="700.0" styleClass="text-field-holder">
+                        <children>
+                            <TextField fx:id="age" promptText="Age" />
+                            <HBox prefHeight="26.0" prefWidth="84.0" />
+                            <TextField fx:id="gender" promptText="Gender">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </TextField>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" layoutX="30.0" layoutY="253.0" prefHeight="46.0" prefWidth="700.0" styleClass="text-field-holder">
+                        <children>
+                            <TextField fx:id="phone" promptText="Phone Number" />
+                            <HBox prefHeight="26.0" prefWidth="84.0" />
+                            <TextField fx:id="email" promptText="Email">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </TextField>
+                        </children>
+                    </HBox>
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                          <Button fx:id="patientButton" mnemonicParsing="false" onAction="#handlePatientButton" styleClass="card-button" text="Patient" />
+                     <HBox prefHeight="82.0" prefWidth="84.0" />
+                     <Button fx:id="doctorButton" layoutX="332.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleDoctorButton" styleClass="card-button" text="Doctor" />
+                     <HBox layoutX="289.0" layoutY="10.0" prefHeight="82.0" prefWidth="84.0" />
+                     <Button fx:id="adminButton" layoutX="402.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleAdminButton" styleClass="card-button" text=" Admin " />
+                  </children>
+               </HBox>
+                </VBox>
+
+            </VBox>
+        </StackPane>
+
+    </VBox>
+</StackPane>

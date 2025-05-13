@@ -1,0 +1,136 @@
+/* Root background */
+.root-pane {
+    -fx-background-color: #F4F6F8;
+    -fx-background-image: url("Images/Hospital2.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Top bar */
+.top-bar {
+    -fx-background-color: #000c66;
+    -fx-pref-height: 60px;
+    -fx-padding: 0 30 0 30;
+}
+
+/* Back button */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 6px;
+}
+
+/* Page Content */
+.page-title {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E2E2E;
+}
+
+.page-text {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+    -fx-text-fill: #2E2E2E;
+    -fx-pref-width: 740px;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+/* Content stack to keep central content layered */
+.content-stack {
+    -fx-padding: 50 30 30 30;
+}
+
+/* Info card (white panels) */
+.info-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.1, 0, 4);
+    -fx-pref-width: 220px;
+}
+.card-button:hover {
+    -fx-background-color: #637dff;
+}.card-button {
+     -fx-background-color: #000c66;
+     -fx-text-fill: white;
+     -fx-font-family: "Roboto";
+     -fx-font-size: 13px;
+     -fx-font-weight: bold;
+     -fx-background-radius: 6px;
+     -fx-cursor: hand;
+ }
+ .card-title {
+   -fx-font-family: "Montserrat";
+   -fx-font-size: 16px;
+   -fx-font-weight: semibold;
+   -fx-text-fill: #2E2E2E;
+ }
+ .round-button {
+     -fx-background-color: #000c66;
+     -fx-text-fill: white;
+     -fx-font-size: 16px;
+     -fx-font-weight: bold;
+     -fx-pref-width: 80px;
+     -fx-pref-height: 80px;
+     -fx-background-radius: 100%;
+     -fx-cursor: hand;
+ }
+ .round-button:hover {
+     -fx-background-color: #2575fc;
+ }
+ .nav-button {
+     -fx-background-color: transparent;
+     -fx-text-fill: white;
+     -fx-font-family: "Roboto";
+     -fx-font-size: 14px;
+     -fx-font-weight: bold;
+     -fx-cursor: hand;
+ }
+
+ .nav-button:hover {
+     -fx-background-color: rgba(255, 255, 255, 0.2);
+     -fx-background-radius: 6px;
+ }
+ .logout-button {
+     -fx-background-color: transparent;
+     -fx-text-fill: red;
+     -fx-font-family: "Roboto";
+     -fx-font-size: 14px;
+     -fx-font-weight: bold;
+     -fx-cursor: hand;
+ }
+ .logout-button:hover {
+     -fx-background-color: rgba(255, 255, 255, 0.2);
+     -fx-background-radius: 6px;
+ }
+
+.panic-card-title {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 16px;
+    -fx-font-weight: semibold;
+    -fx-text-fill: red;
+}
+.panic-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.panic-button:hover {
+    -fx-background-color: #637dff;
+}

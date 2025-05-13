@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" styleClass="root-pane" stylesheets="@../PageStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.rpmsfinal.AdminControllers.UsersController">
+
+    <VBox alignment="TOP_CENTER" spacing="0">
+        <!-- Top Bar -->
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+            <Button fx:id="backButton" onAction="#goBackHome" styleClass="back-button" text="&gt; Back" />
+            <Region HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <!-- Main Content Area -->
+        <StackPane styleClass="content-stack" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" spacing="40" styleClass="center-content">
+                <VBox alignment="CENTER" prefHeight="85.0" prefWidth="740.0" styleClass="info-card">
+                    <children>
+                        <Label styleClass="page-title" text="Manage Users" />
+                    </children>
+                </VBox>
+
+                <HBox alignment="CENTER" spacing="30">
+                    <VBox alignment="CENTER" prefWidth="521.0" spacing="15" styleClass="info-card">
+                        <Label styleClass="card-title" text="Create User" />
+                        <Button fx:id="createButton" onAction="#handleCreateButton" styleClass="card-button" text="Create" />
+                    </VBox>
+
+                    <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                        <Label styleClass="card-title" text="View Users" />
+                        <Button fx:id="viewButton" onAction="#handleViewButton" styleClass="card-button" text="View" />
+                    </VBox>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="136.0" spacing="30">
+                    <children>
+                        <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                            <children>
+                                <Label styleClass="card-title" text="Update User" />
+                                <Button fx:id="updateButton" onAction="#handleUpdateButton" styleClass="card-button" text="Update" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="15" styleClass="info-card">
+                            <children>
+                                <Label styleClass="card-title" text="Delete User" />
+                                <Button fx:id="deleteButton" onAction="#handleDeleteButton" styleClass="card-button" text="Delete" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+            </VBox>
+        </StackPane>
+    </VBox>
+</StackPane>
