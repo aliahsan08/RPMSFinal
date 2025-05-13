@@ -62,7 +62,6 @@ public class Doctor extends User {
     public String toString() {
         return super.toString() +
                 "\nSpecialization: " + specialization +
-                "\nWorking Hours: " + workingHours +
-                "\nAssigned Patients: " + assignedPatientIds.size();
+                "\nWorking Hours: " + workingHours;
     }
 }
