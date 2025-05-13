@@ -8,7 +8,7 @@ public class DBConnection {
     // JDBC connection parameters
     private static final String URL  = "jdbc:mysql://127.0.0.1:3306/rpms?user=root";
     private static final String USER = "root";
-    private static final String PASS = "qwerty99+";
+    private static final String PASS = "your password";
 
     static {
         try {
