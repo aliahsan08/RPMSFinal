@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <StackPane prefHeight="600.0" prefWidth="800.0" styleClass="login-background" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.rpmsfinal.LoginController">
@@ -17,17 +18,21 @@
       </children>
    </HBox>
 
-    <VBox alignment="CENTER" maxHeight="400.0" maxWidth="400.0" prefHeight="359.0" prefWidth="372.0" spacing="20" styleClass="login-card">
+          <VBox alignment="CENTER" maxHeight="400.0" maxWidth="400.0" prefHeight="359.0" prefWidth="372.0" spacing="20" styleClass="login-card">
 
-        <Label styleClass="login-title" text="Login to Your Account" />
+              <Label styleClass="login-title" text="Login to Your Account" />
 
-        <TextField fx:id="usernameField" promptText="Username" styleClass="login-field" />
+              <TextField fx:id="usernameField" promptText="Username" styleClass="login-field" />
         <PasswordField fx:id="passwordField" promptText="Password" styleClass="login-field" />
 
-        <Button fx:id="loginButton" onAction="#handleLogin" styleClass="login-button" text="Login" />
-      <Text fx:id="loginText" strokeType="OUTSIDE" strokeWidth="0.0" />
+              <Button fx:id="loginButton" onAction="#handleLogin" styleClass="login-button" text="Login" />
+      <Text fx:id="loginText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-text" textAlignment="CENTER" wrappingWidth="150">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
 
-    </VBox>
+          </VBox>
     <stylesheets>
         <URL value="@Login.css" />
     </stylesheets>
