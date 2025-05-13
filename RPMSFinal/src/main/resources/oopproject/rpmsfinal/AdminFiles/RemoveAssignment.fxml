@@ -24,7 +24,7 @@
             <VBox alignment="TOP_CENTER" spacing="30" styleClass="center-content">
 
                 <VBox alignment="CENTER" spacing="15" styleClass="info-card">
-                    <Label styleClass="page-title" text="Assign Patient To Doctor" />
+                    <Label styleClass="page-title" text="Remove Assignment" />
                 </VBox>
 
                 <VBox alignment="CENTER" prefHeight="350.0" spacing="15" styleClass="info-card">
