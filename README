@@ -1,0 +1,40 @@
+RPMSFinal - Remote Patient Monitoring System
+
+This is a JavaFX-based desktop application for managing users, appointments, vitals, and administrative operations in a medical environment. It uses a MySQL database for persistent data storage
+
+Requirements
+- Java 17 or above
+- JavaFX SDK
+- MySQL Server
+- MySQL Connector/J (included in `libs/` folder)
+- IDE (e.g., IntelliJ, Eclipse, or Visual Studio Code)
+
+Project Structure
+
+- 'src/': Java source code
+- 'resources/': FXML and CSS files
+- 'libs/': Contains the used jar files (in case libraries dont connect automatically)
+
+How to Run
+
+1. Import the project into your IDE as a Maven project.
+2. Configure JavaFX:
+   - Set VM options to include JavaFX modules
+3. Ensure MySQL is running and the database is properly set up. An sql script is provided for the user to set up the database.
+4. Update your DB credentials in the 'DBConnection.java' file.
+5. Run the Main class to launch the application.
+
+NOTE: To login to the application after running the Main class, the user needs username and passwords. A few are mentioned as follows to assist the user:
+
+Patient:
+Username: a_ahsan
+Password: patient123
+
+Doctor: 
+Username: dr_saarim
+Password: doctor123
+
+Admin:
+Username: superadmin
+Password: admin123
+
